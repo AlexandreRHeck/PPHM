@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/activity_file_manager.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/activity_main.xml" value="0.15964985410587745" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/activity_search.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/dialog_consumer_unit_filter.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/dialog_create_new_client.xml" value="0.5" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/dialog_set_equipments.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/dialog_update_status.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/fragment_commercial_industrial.xml" value="0.5" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/fragment_residential.xml" value="0.1215706015605336" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/fragment_rural.xml" value="0.67" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/item_consumer_unit.xml" value="0.203125" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/item_equipment.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/layout/item_file.xml" value="0.19947916666666668" />
+        <entry key="..\:/_StarMeasure/Android/PPHM/app/src/main/res/menu/menu_main.xml" value="0.176" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

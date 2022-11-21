@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">PPHM</string>
+    <string name="button_close">Fechar</string>
+    <string name="residential_class">Residencial</string>
+    <string name="industrial_class">Industrial</string>
+    <string name="commercial_class">Comercial</string>
+    <string name="rural_class">Rural</string>
+    <string name="menu_list_import">Importar CSV</string>
+    <string name="menu_list_banco">Atualizar banco de dados</string>
+    <string name="menu_list_file_manager">Gerenciador de arquivos</string>
+    <string name="menu_list_filter">Filtro</string>
+    <string name="menu_list_export">Exportar PPHs</string>
+    <string name="menu_list_item_update_status">Atualizar Status</string>
+    <string name="can_not_import_csv">Falha ao importar lista</string>
+    <string name="pph_already_done">PPH já realizada</string>
+    <string name="class_not_find">Classe não reconhecida, verifique a lista de unidades consumidoras.</string>
+    <string name="consumer_unit_title">Unidade Consumidora:</string>
+    <string name="consumer_unit_hint">Unidade Consumidora</string>
+    <string name="client_meter_title">Medidor Cliente:</string>
+    <string name="client_meter_hint">Medidor Cliente</string>
+    <string name="class_title">Classe:</string>
+    <string name="phone_1_title">Telefone 1:</string>
+    <string name="phone_2_title">Telefone 2:</string>
+    <string name="button_phone_1">Ligar Tel. 1</string>
+    <string name="button_phone_2">Ligar Tel. 2</string>
+    <string name="menu_item_equipments">Equipamentos</string>
+    <string name="menu_item_finish">Finalizar</string>
+    <string name="write_here_hint">Escreva aqui</string>
+    <string name="clock">00:00</string>
+    <string name="ERROR">OCORREU UM ERRO</string>
+    <string name="status_false">Não feito</string>
+    <string name="status_true">Feito</string>
+    <string name="save_button">Salvar</string>
+    <string name="button_share">Compartilhar</string>
+    <string name="button_delete">Excluir</string>
+    <string name="button_filter">Filtrar</string>
+
+    <string name="status_item_all">Todos</string>
+    <string name="status_item_0">Pesquisa não realizada</string>
+    <string name="status_item_1">Cliente não atendeu</string>
+    <string name="status_item_2">Cliente recusou responder a pesquisa</string>
+    <string name="status_item_3">Telefone não existe</string>
+    <string name="status_item_4">Pesquisa realizada</string>
+
+    <string name="client_name_hint">Nome do cliente</string>
+
+    <string-array name="status_list">
+        <item>Pesquisa não realizada</item>
+        <item>Cliente não atendeu</item>
+        <item>Cliente recusou responder a pesquisa</item>
+        <item>Telefone não existe</item>
+    </string-array>
+
+    <string-array name="complete_status_list">
+        <item>Pesquisa não realizada</item>
+        <item>Cliente não atendeu</item>
+        <item>Cliente recusou responder a pesquisa</item>
+        <item>Telefone não existe</item>
+        <item>Pesquisa realizada</item>
+    </string-array>
+
+    <!-- Alert Dialog -->
+    <string name="alert_dialog_title_warning">Aviso</string>
+    <string name="alert_dialog_message_delete_file">Tem certeza que deseja excluir este arquivo?</string>
+    <string name="alert_dialog_message_import_alert">Cuidado!\nAo importar uma nova base dados todos os dados atuais no aplicativo serão perdidos!\nLembre-se salvar todos os arquivos que você exportou!\nTem certeza que deseja importar uma nova base de dados?</string>
+    <string name="alert_dialog_button_yes">Sim</string>
+    <string name="alert_dialog_button_no">Não</string>
+
+    <string name="dialog_message_status_update_caution">Cuidado!\nAo clicar em salvar o status atual da PPH será atualizado e a PPH em andamento será fechada. Caso tenha tido progresso com a pesquisa, continue até finalizar.\n\nSelecione o status desejado abaixo:</string>
+
+    <string name="residential_search_quest_1">Cliente/Entrevistado:</string>
+    <string name="residential_search_quest_2">É o titular da fatura de energia?</string>
+    <string name="residential_search_answer_2_1">Sim.</string>
+    <string name="residential_search_answer_2_2">Não.</string>
+    <string name="residential_search_quest_3">Telefone do cliente para contato:</string>
+    <string name="residential_search_quest_4">1. O que caracteriza o consumo de energia do seu domicílio?</string>
+    <string name="residential_search_answer_4_1">Só Residencial</string>
+    <string name="residential_search_answer_4_1_1">Casa</string>
+    <string name="residential_search_answer_4_1_2">Apartamento</string>
+    <string name="residential_search_answer_4_1_3">Outro</string>
+    <string name="residential_search_answer_4_2">Residencial e Comercial</string>
+    <string name="residential_search_answer_4_3">Residencial e Industrial</string>
+    <string name="residential_search_quest_5">2. Geralmente, quais os períodos do dia em que o consumo é maior (maior quantidade de aparelhos ligados) ?</string>
+    <string name="residential_search_answer_5_1">Manhã (06h às 12h)</string>
+    <string name="residential_search_answer_5_2">Tarde (12h às 18h)</string>
+    <string name="residential_search_answer_5_3">Noite (18h às 24h)</string>
+    <string name="residential_search_answer_5_4">Madrugada (00h às 06h)</string>
+    <string name="residential_search_quest_6">3. Quantas pessoas residem ou trabalham no local?</string>
+    <string name="residential_search_quest_7">4. Sabe qual é o valor da sua tarifa de energia elétrica atual?</string>
+    <string name="residential_search_answer_7_1">Sim.</string>
+    <string name="residential_search_answer_7_2">Não.</string>
+    <string name="residential_search_quest_8">5. Caso ocorra uma mudança nas tarifas de energia de tal modo que a tarifa de energia para uso das 20h as 23h fosse 5 vezes mais cara, você:</string>
+    <string name="residential_search_answer_8_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico..</string>
+    <string name="residential_search_answer_8_2">Alteraria em um único mês para verificar o impacto na conta de energia.</string>
+    <string name="residential_search_answer_8_3">Não alteraria os hábitos de uso da energia elétrica.</string>
+    <string name="residential_search_quest_9">6. Se houvesse um desconto de 10% na tarifa de energia para uso fora do horário das 20h às 23h, você:</string>
+    <string name="residential_search_answer_9_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico.</string>
+    <string name="residential_search_answer_9_2">Poderia alterar o horário de uso, se o desconto fosse de 20% ou mais.</string>
+    <string name="residential_search_answer_9_3">Não alteraria os hábitos de uso da energia elétrica.</string>
+    <string name="residential_search_quest_10">7. Se ganhasse um aparelhor de ar condicionado portátil, para ser ligado numa tomada e seu uso resultasse num aumento médio de 80,00 reais na conta mensal de energia, você:</string>
+    <string name="residential_search_answer_10_1">Com certeza utilizaria o aparelho de ar condicionado todos os dias.</string>
+    <string name="residential_search_answer_10_2">Utilizaria o aparelho somente em dias muito quentes.</string>
+    <string name="residential_search_answer_10_3">Não utilizaria para não aumentar a conta de energia.</string>
+    <string name="residential_search_answer_10_4">Não utilizaria por não gostar de ar condicionado.</string>
+    <string name="residential_search_quest_11">8. Você já recebeu alguma orientação por parte da distribuidora de como economizar energia elétrica? E você pratica a economia de energia elétrica no seu dia a dia?</string>
+    <string name="residential_search_answer_11_1">Já recebi orientação e pratico economia de energia no meu dia a dia.</string>
+    <string name="residential_search_answer_11_2">Já recebi orientação, mas não pratico economia de energia no meu dia a dia.</string>
+    <string name="residential_search_answer_11_3">Não recebi orientação, mas pratico economia de energia no meu dia a dia.</string>
+    <string name="residential_search_answer_11_4">Não recebi orientação e não pratico economia de energia no meu dia a dia.</string>
+
+    <string name="rural_search_quest_1">Cliente/Entrevistado:</string>
+    <string name="rural_search_quest_2">É o titular da fatura de energia?</string>
+    <string name="rural_search_answer_2_1">Sim.</string>
+    <string name="rural_search_answer_2_2">Não.</string>
+    <string name="rural_search_quest_3">Telefone do cliente para contato:</string>
+    <string name="rural_search_quest_4">1. O que caracteriza o consumo de energia do seu domicílio?</string>
+    <string name="rural_search_answer_4_1">Só Residencial</string>
+    <string name="rural_search_answer_4_1_1">Casa</string>
+    <string name="rural_search_answer_4_1_2">Apartamento</string>
+    <string name="rural_search_answer_4_1_3">Outro</string>
+    <string name="rural_search_answer_4_2">Residencial e Comercial</string>
+    <string name="rural_search_answer_4_3">Residencial e Industrial</string>
+    <string name="rural_search_quest_5">2. Geralmente, quais os períodos do dia em que o consumo é maior (maior quantidade de aparelhos ligados) ?</string>
+    <string name="rural_search_answer_5_1">Manhã (06h às 12h)</string>
+    <string name="rural_search_answer_5_2">Tarde (12h às 18h)</string>
+    <string name="rural_search_answer_5_3">Noite (18h às 24h)</string>
+    <string name="rural_search_answer_5_4">Madrugada (00h às 06h)</string>
+    <string name="rural_search_quest_6">3. Quantas pessoas residem ou trabalham no local?</string>
+    <string name="rural_search_quest_7">4. Sabe qual é o valor da sua tarifa de energia elétrica atual?</string>
+    <string name="rural_search_answer_7_1">Sim.</string>
+    <string name="rural_search_answer_7_2">Não.</string>
+    <string name="rural_search_quest_8">5. A sua UC se beneficia de algum desconto aplicado as tarifas rurais:</string>
+    <string name="rural_search_answer_8_1">Sim.</string>
+    <string name="rural_search_answer_8_2">Não</string>
+    <string name="rural_search_answer_8_3">Desconheço os descontos.</string>
+    <string name="rural_search_quest_9">6. Se houvesse um desconto de 10% na tarifa de energia para uso fora do horário das 20h às 23h, você:</string>
+    <string name="rural_search_answer_9_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico.</string>
+    <string name="rural_search_answer_9_2">Poderia alterar o horário de uso, se o desconto fosse de 20% ou mais.</string>
+    <string name="rural_search_answer_9_3">Não alteraria os hábitos de uso da energia elétrica.</string>
+    <string name="rural_search_quest_10">7.	Já avaliou se a utilização da modalidade de Tarifa Branca seria adequada ao seu estabelecimento?</string>
+    <string name="rural_search_answer_10_1">Sim, já utilizo essa modalidade</string>
+    <string name="rural_search_answer_10_2">Sim, mas não uso essa modalidade</string>
+    <string name="rural_search_answer_10_3">Sim, Mas não serve para o meu estabelecimento</string>
+    <string name="rural_search_answer_10_4">Não conheço essa modalidade tarifaria</string>
+    <string name="rural_search_quest_11">8. Você já recebeu alguma orientação por parte da distribuidora de como economizar energia elétrica? E você pratica a economia de energia elétrica no seu dia a dia?</string>
+    <string name="rural_search_answer_11_1">Já recebi orientação e pratico economia de energia no meu dia a dia.</string>
+    <string name="rural_search_answer_11_2">Já recebi orientação, mas não pratico economia de energia no meu dia a dia.</string>
+    <string name="rural_search_answer_11_3">Não recebi orientação, mas pratico economia de energia no meu dia a dia.</string>
+    <string name="rural_search_answer_11_4">Não recebi orientação e não pratico economia de energia no meu dia a dia.</string>
+
+
+    <string name="industrial_commercial_search_quest_1">Cliente/Entrevistado:</string>
+    <string name="industrial_commercial_search_quest_2">É o titular da fatura de energia?</string>
+    <string name="industrial_commercial_search_answer_2_1">Sim.</string>
+    <string name="industrial_commercial_search_answer_2_2">Não.</string>
+    <string name="industrial_commercial_search_quest_3">Telefone do cliente para contato:</string>
+    <string name="industrial_commercial_search_quest_4">1. O que caracteriza o consumo de energia do seu domicílio?</string>
+    <string name="industrial_commercial_search_answer_4_1">Só Residencial</string>
+    <string name="industrial_commercial_search_answer_4_1_1">Casa</string>
+    <string name="industrial_commercial_search_answer_4_1_2">Apartamento</string>
+    <string name="industrial_commercial_search_answer_4_1_3">Outro</string>
+    <string name="industrial_commercial_search_answer_4_2">Residencial e Comercial</string>
+    <string name="industrial_commercial_search_answer_4_3">Residencial e Industrial</string>
+    <string name="industrial_commercial_search_quest_5">2. Geralmente, quais os períodos do dia em que o consumo é maior (maior quantidade de aparelhos ligados) ?</string>
+    <string name="industrial_commercial_search_answer_5_1">Manhã (06h às 12h)</string>
+    <string name="industrial_commercial_search_answer_5_2">Tarde (12h às 18h)</string>
+    <string name="industrial_commercial_search_answer_5_3">Noite (18h às 24h)</string>
+    <string name="industrial_commercial_search_answer_5_4">Madrugada (00h às 06h)</string>
+    <string name="industrial_commercial_search_quest_6">3. Quantas pessoas residem ou trabalham no local?</string>
+    <string name="industrial_commercial_search_quest_7">4. Sabe qual é o valor da sua tarifa de energia elétrica atual?</string>
+    <string name="industrial_commercial_search_answer_7_1">Sim.</string>
+    <string name="industrial_commercial_search_answer_7_2">Não.</string>
+    <string name="industrial_commercial_search_quest_8">5. Caso ocorra uma mudança nas tarifas de energia de tal modo que a tarifa de energia para uso das 20h as 23h fosse 5 vezes mais cara, você:</string>
+    <string name="industrial_commercial_search_answer_8_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico..</string>
+    <string name="industrial_commercial_search_answer_8_2">Alteraria em um único mês para verificar o impacto na conta de energia.</string>
+    <string name="industrial_commercial_search_answer_8_3">Não alteraria os hábitos de uso da energia elétrica.</string>
+    <string name="industrial_commercial_search_quest_9">6. Se houvesse um desconto de 10% na tarifa de energia para uso fora do horário das 20h às 23h, você:</string>
+    <string name="industrial_commercial_search_answer_9_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico.</string>
+    <string name="industrial_commercial_search_answer_9_2">Poderia alterar o horário de uso, se o desconto fosse de 20% ou mais.</string>
+    <string name="industrial_commercial_search_answer_9_3">Não alteraria os hábitos de uso da energia elétrica.</string>
+    <string name="industrial_commercial_search_quest_10">7. Já avaliou se a utilização da modalidade de Tarifa Branca seria adequada ao seu estabelecimento?</string>
+    <string name="industrial_commercial_search_answer_10_1">Sim, já utilizo essa modalidade</string>
+    <string name="industrial_commercial_search_answer_10_2">Sim, mas não uso essa modalidade</string>
+    <string name="industrial_commercial_search_answer_10_3">Sim, Mas não serve para o meu estabelecimento</string>
+    <string name="industrial_commercial_search_answer_10_4">Não conheço essa modalidade tarifaria</string>
+    <string name="industrial_commercial_search_quest_11">8. Você já recebeu alguma orientação por parte da distribuidora de como economizar energia elétrica? E você pratica a economia de energia elétrica no seu dia a dia?</string>
+    <string name="industrial_commercial_search_answer_11_1">Já recebi orientação e pratico economia de energia no meu dia a dia.</string>
+    <string name="industrial_commercial_search_answer_11_2">Já recebi orientação, mas não pratico economia de energia no meu dia a dia.</string>
+    <string name="industrial_commercial_search_answer_11_3">Não recebi orientação, mas pratico economia de energia no meu dia a dia.</string>
+    <string name="industrial_commercial_search_answer_11_4">Não recebi orientação e não pratico economia de energia no meu dia a dia.</string>
+
+    <string name="rural_search_quest_99"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
