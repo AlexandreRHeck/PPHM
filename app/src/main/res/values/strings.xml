@@ -154,28 +154,28 @@
     <string name="industrial_commercial_search_answer_2_1">Sim.</string>
     <string name="industrial_commercial_search_answer_2_2">Não.</string>
     <string name="industrial_commercial_search_quest_3">Telefone do cliente para contato:</string>
-    <string name="industrial_commercial_search_quest_4">1. O que caracteriza o consumo de energia do seu domicílio?</string>
+    <string name="industrial_commercial_search_quest_4">1. O que caracteriza o consumo de energia do seu estabelecimento?</string>
     <string name="industrial_commercial_search_answer_4_1">Só Residencial</string>
     <string name="industrial_commercial_search_answer_4_1_1">Casa</string>
     <string name="industrial_commercial_search_answer_4_1_2">Apartamento</string>
     <string name="industrial_commercial_search_answer_4_1_3">Outro</string>
     <string name="industrial_commercial_search_answer_4_2">Residencial e Comercial</string>
     <string name="industrial_commercial_search_answer_4_3">Residencial e Industrial</string>
-    <string name="industrial_commercial_search_quest_5">2. Geralmente, quais os períodos do dia em que o consumo é maior (maior quantidade de aparelhos ligados) ?</string>
+    <string name="industrial_commercial_search_quest_5">2. Geralmente, quais os períodos do dia em que o consumo é maior (aparelhos ligados ou equipamentos, etc)?</string>
     <string name="industrial_commercial_search_answer_5_1">Manhã (06h às 12h)</string>
     <string name="industrial_commercial_search_answer_5_2">Tarde (12h às 18h)</string>
     <string name="industrial_commercial_search_answer_5_3">Noite (18h às 24h)</string>
     <string name="industrial_commercial_search_answer_5_4">Madrugada (00h às 06h)</string>
-    <string name="industrial_commercial_search_quest_6">3. Quantas pessoas residem ou trabalham no local?</string>
-    <string name="industrial_commercial_search_quest_7">4. Sabe qual é o valor da sua tarifa de energia elétrica atual?</string>
+    <string name="industrial_commercial_search_quest_6">3. Quantas pessoas trabalham no local?</string>
+    <string name="industrial_commercial_search_quest_7">4.	Sabe Qual é o valor da sua tarifa de energia elétrica atual?</string>
     <string name="industrial_commercial_search_answer_7_1">Sim.</string>
     <string name="industrial_commercial_search_answer_7_2">Não.</string>
-    <string name="industrial_commercial_search_quest_8">5. Caso ocorra uma mudança nas tarifas de energia de tal modo que a tarifa de energia para uso das 20h as 23h fosse 5 vezes mais cara, você:</string>
+    <string name="industrial_commercial_search_quest_8">5.	Caso ocorra uma mudança nas tarifas de energia de tal modo que a tarifa de energia para uso das 20:00 às 23:00 horas fosse 5 vezes mais cara, você:</string>
     <string name="industrial_commercial_search_answer_8_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico..</string>
     <string name="industrial_commercial_search_answer_8_2">Alteraria em um único mês para verificar o impacto na conta de energia.</string>
     <string name="industrial_commercial_search_answer_8_3">Não alteraria os hábitos de uso da energia elétrica.</string>
-    <string name="industrial_commercial_search_quest_9">6. Se houvesse um desconto de 10% na tarifa de energia para uso fora do horário das 20h às 23h, você:</string>
-    <string name="industrial_commercial_search_answer_9_1">Com certeza alteraria o horário de uso de alguns equipamentos, como o chuveiro elétrico.</string>
+    <string name="industrial_commercial_search_quest_9">6.	Se houvesse um desconto de 10% na tarifa de energia para uso fora do horário das 20:00 às 23:00 horas você:</string>
+    <string name="industrial_commercial_search_answer_9_1">Com certeza alteraria o horário de uso de alguns equipamentos ou eletrodomesticos.</string>
     <string name="industrial_commercial_search_answer_9_2">Poderia alterar o horário de uso, se o desconto fosse de 20% ou mais.</string>
     <string name="industrial_commercial_search_answer_9_3">Não alteraria os hábitos de uso da energia elétrica.</string>
     <string name="industrial_commercial_search_quest_10">7. Já avaliou se a utilização da modalidade de Tarifa Branca seria adequada ao seu estabelecimento?</string>
@@ -189,7 +189,7 @@
     <string name="industrial_commercial_search_answer_11_3">Não recebi orientação, mas pratico economia de energia no meu dia a dia.</string>
     <string name="industrial_commercial_search_answer_11_4">Não recebi orientação e não pratico economia de energia no meu dia a dia.</string>
 
-    <string name="rural_search_quest_99"></string>
+    <!-- <string name="rural_search_quest_99"></string> -->
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
