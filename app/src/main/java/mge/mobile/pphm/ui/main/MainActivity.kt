@@ -383,6 +383,7 @@ class MainActivity : AppCompatActivity() {
 
         return resultado
     }
+
     fun EnviarBanco() {
 
         val split1 = "\\."

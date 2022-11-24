@@ -11,7 +11,7 @@ import android.widget.CheckBox
 import androidx.core.widget.addTextChangedListener
 import mge.mobile.pphm.R
 import mge.mobile.pphm.databinding.FragmentCommercialIndustrialBinding
-import mge.mobile.pphm.databinding.FragmentResidentialBinding
+
 import org.jetbrains.anko.internals.AnkoInternals.createAnkoContext
 
 
@@ -73,41 +73,53 @@ class CommercialIndustrialFragment(private val viewModel: SearchViewModel) : Fra
             }
 
             // 1. O que caracteriza o consumo de energia do seu domicilio ?
-            binding.industrialCommercialSearchQuestion4Answer1.setOnCheckedChangeListener { _, checkedId ->
+            binding.industrialCommercialSearchQuestion4Answer1.setOnCheckedChangeListener {  _, checkedId ->
+                answer4 = when(checkedId) {
+                    R.id.industrial_commercial_search_question_4_answer_1_1 -> binding.industrialCommercialSearchQuestion4Answer11.text.toString()
+                    R.id.industrial_commercial_search_question_4_answer_1_2 -> binding.industrialCommercialSearchQuestion4Answer12.text.toString()
+                    R.id.industrial_commercial_search_question_4_answer_1_3 -> binding.industrialCommercialSearchQuestion4Answer13.text.toString()
+                    else -> ""
+                }
+                viewModel.search4.postValue(viewModel.buildSearch(4, answer4))
+            }
+
+
+           /* binding.industrialCommercialSearchQuestion4Answer1.setOnCheckedChangeListener { _, checkedId ->
                 when (checkedId) {
-                    R.id.residential_search_question_4_answer_1_1 -> {
-                        binding.industrialCommercialSearchQuestion4Answer2.visibility = View.VISIBLE
+                    R.id.industrial_commercial_search_question_4_answer_1_1 -> {
+                        binding.industrialCommercialSearchQuestion4Answer1.visibility = View.VISIBLE
                         answer4 = ""
                     }
-                    R.id.residential_search_question_4_answer_1_2 -> {
-                        binding.industrialCommercialSearchQuestion4Answer2.visibility = View.GONE
-                        answer4 = binding.industrialCommercialSearchQuestion5Answer12.text.toString()
+                    R.id.industrial_commercial_search_question_4_answer_1_2 -> {
+                        binding.industrialCommercialSearchQuestion4Answer1.visibility = View.GONE
+                        answer4 = binding.industrialCommercialSearchQuestion4Answer12.text.toString()
                     }
-                    R.id.residential_search_question_4_answer_1_3 -> {
-                        binding.industrialCommercialSearchQuestion4Answer2.visibility = View.GONE
+                    R.id.industrial_commercial_search_question_4_answer_1_3 -> {
+                        binding.industrialCommercialSearchQuestion4Answer1.visibility = View.GONE
                         answer4 = binding.industrialCommercialSearchQuestion4Answer13.text.toString()
                     }
                 }
                 Log.i("test->", answer4)
                 viewModel.search4.postValue(viewModel.buildSearch(4, answer4))
             }
+            */
 
-            binding.industrialCommercialSearchQuestion4Answer2.setOnCheckedChangeListener { _, checkedId ->
+         /*   binding.industrialCommercialSearchQuestion4Answer2.setOnCheckedChangeListener { _, checkedId ->
                 when (checkedId) {
-                    R.id.residential_search_question_4_answer_2_1 -> {
+                    R.id.industrial_commercial_search_question_4_answer_2_1 -> {
                         answer4="Residencial;" + binding.industrialCommercialSearchQuestion4Answer21.text.toString()
                     }
 
-                    R.id.residential_search_question_4_answer_2_2 -> {
+                    R.id.industrial_commercial_search_question_4_answer_2_2 -> {
                         answer4="Residencial;" + binding.industrialCommercialSearchQuestion4Answer22.text.toString()
                     }
-                    R.id.residential_search_question_4_answer_2_3 -> {
+                    R.id.industrial_commercial_search_question_4_answer_2_3 -> {
                         answer4="Residencial;" + binding.industrialCommercialSearchQuestion4Answer23.text.toString()
                     }
                 }
                 Log.i("test->", answer4)
                 viewModel.search4.postValue(viewModel.buildSearch(4, answer4))
-            }
+            }*/
 
             // 2. Geralmente, quais os períodos do dia o consumo é maior ?
             binding.industrialCommercialSearchQuestion5Answer11.setOnClickListener(View.OnClickListener {
@@ -179,8 +191,8 @@ class CommercialIndustrialFragment(private val viewModel: SearchViewModel) : Fra
             // 4. Sabe qual é o valor da sua tarifa de energia elétrica atual?
             binding.industrialCommercialSearchQuestion7Answer1.setOnCheckedChangeListener { _, checkedId ->
                 answer7 = when (checkedId) {
-                    R.id.residential_search_question_7_answer_1_1 -> binding.industrialCommercialSearchQuestion7Answer11.text.toString()
-                    R.id.residential_search_question_7_answer_1_2 -> binding.industrialCommercialSearchQuestion7Answer12.text.toString()
+                    R.id.industrial_commercial_search_question_7_answer_1_1 -> binding.industrialCommercialSearchQuestion7Answer11.text.toString()
+                    R.id.industrial_commercial_search_question_7_answer_1_2 -> binding.industrialCommercialSearchQuestion7Answer12.text.toString()
                     else -> ""
                 }
                 viewModel.search7.postValue(viewModel.buildSearch(7, answer7))
@@ -189,9 +201,9 @@ class CommercialIndustrialFragment(private val viewModel: SearchViewModel) : Fra
             // 5. Caso ocorra uma mudança nas tarifas de energia de tal modo que a tarifa de energia para uso das 20:00 às 23:00 horas fosse 5 vezes mais cara, você:
             binding.industrialCommercialSearchQuestion8Answer1.setOnCheckedChangeListener { _, checkedId ->
                 answer8 = when (checkedId) {
-                    R.id.residential_search_question_8_answer_1_1 -> binding.industrialCommercialSearchQuestion8Answer11.text.toString()
-                    R.id.residential_search_question_8_answer_1_2 -> binding.industrialCommercialSearchQuestion8Answer12.text.toString()
-                    R.id.residential_search_question_8_answer_1_3 -> binding.industrialCommercialSearchQuestion8Answer13.text.toString()
+                    R.id.industrial_commercial_search_question_8_answer_1_1 -> binding.industrialCommercialSearchQuestion8Answer11.text.toString()
+                    R.id.industrial_commercial_search_question_8_answer_1_2 -> binding.industrialCommercialSearchQuestion8Answer12.text.toString()
+                    R.id.industrial_commercial_search_question_8_answer_1_3 -> binding.industrialCommercialSearchQuestion8Answer13.text.toString()
                     else -> ""
                 }
                 viewModel.search8.postValue(viewModel.buildSearch(8, answer8))
@@ -200,13 +212,13 @@ class CommercialIndustrialFragment(private val viewModel: SearchViewModel) : Fra
             // 6. Se houvesse um desconto de 10% na tarifa de energia para uso fora do horário das 20:00 às 23:00 horas você:
             binding.industrialCommercialSearchQuestion9Answer1.setOnCheckedChangeListener { _, checkedId ->
                 when (checkedId) {
-                    R.id.residential_search_question_9_answer_1_1 -> {
+                    R.id.industrial_commercial_search_question_9_answer_1_1 -> {
                         answer9 = binding.industrialCommercialSearchQuestion9Answer11.text.toString()
                     }
-                    R.id.residential_search_question_9_answer_1_2 -> {
+                    R.id.industrial_commercial_search_question_9_answer_1_2 -> {
                         answer9 = binding.industrialCommercialSearchQuestion9Answer12.text.toString()
                     }
-                    R.id.residential_search_question_9_answer_1_3 -> {
+                    R.id.industrial_commercial_search_question_9_answer_1_3 -> {
                         answer9 = binding.industrialCommercialSearchQuestion9Answer12.text.toString()
                     }
                 }
@@ -218,10 +230,10 @@ class CommercialIndustrialFragment(private val viewModel: SearchViewModel) : Fra
             // aumento médio de 80,00 oitenta reais na conta mensal de energia:
             binding.industrialCommercialSearchQuestion10Answer1.setOnCheckedChangeListener { _, checkedId ->
                 answer10 = when (checkedId) {
-                    R.id.residential_search_question_10_answer_1_1 -> binding.industrialCommercialSearchQuestion10Answer11.text.toString()
-                    R.id.residential_search_question_10_answer_1_2 -> binding.industrialCommercialSearchQuestion10Answer12.text.toString()
-                    R.id.residential_search_question_10_answer_1_3 -> binding.industrialCommercialSearchQuestion10Answer13.text.toString()
-                    R.id.residential_search_question_10_answer_1_4 -> binding.industrialCommercialSearchQuestion10Answer14.text.toString()
+                    R.id.industrial_commercial_search_question_10_answer_1_1 -> binding.industrialCommercialSearchQuestion10Answer11.text.toString()
+                    R.id.industrial_commercial_search_question_10_answer_1_2 -> binding.industrialCommercialSearchQuestion10Answer12.text.toString()
+                    R.id.industrial_commercial_search_question_10_answer_1_3 -> binding.industrialCommercialSearchQuestion10Answer13.text.toString()
+                    R.id.industrial_commercial_search_question_10_answer_1_4 -> binding.industrialCommercialSearchQuestion10Answer14.text.toString()
                     else -> ""
                 }
                 viewModel.search10.postValue(viewModel.buildSearch(10, answer10))
@@ -231,10 +243,10 @@ class CommercialIndustrialFragment(private val viewModel: SearchViewModel) : Fra
             // E você pratica a economia de energia elétrica no seu dia a dia?
             binding.industrialCommercialSearchQuestion11Answer1.setOnCheckedChangeListener { _, checkedId ->
                 answer11 = when (checkedId) {
-                    R.id.residential_search_question_11_answer_1_1 -> binding.industrialCommercialSearchQuestion11Answer11.text.toString()
-                    R.id.residential_search_question_11_answer_1_2 -> binding.industrialCommercialSearchQuestion11Answer12.text.toString()
-                    R.id.residential_search_question_11_answer_1_3 -> binding.industrialCommercialSearchQuestion11Answer13.text.toString()
-                    R.id.residential_search_question_11_answer_1_4 -> binding.industrialCommercialSearchQuestion11Answer14.text.toString()
+                    R.id.industrial_commercial_search_question_11_answer_1_1 -> binding.industrialCommercialSearchQuestion11Answer11.text.toString()
+                    R.id.industrial_commercial_search_question_11_answer_1_2 -> binding.industrialCommercialSearchQuestion11Answer12.text.toString()
+                    R.id.industrial_commercial_search_question_11_answer_1_3 -> binding.industrialCommercialSearchQuestion11Answer13.text.toString()
+                    R.id.industrial_commercial_search_question_11_answer_1_4 -> binding.industrialCommercialSearchQuestion11Answer14.text.toString()
                     else -> ""
                 }
                 viewModel.search11.postValue(viewModel.buildSearch(11, answer11))

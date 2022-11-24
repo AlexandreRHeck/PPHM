@@ -77,7 +77,17 @@ class RuralFragment(private val viewModel: SearchViewModel) : Fragment() {
             }
 
             // 1. O que caracteriza o consumo de energia do seu domicilio ?
-            binding.ruralSearchQuestion4Answer1.setOnCheckedChangeListener { _, checkedId ->
+
+            binding.ruralSearchQuestion4Answer1.setOnCheckedChangeListener {  _, checkedId ->
+                answer4 = when(checkedId) {
+                    R.id.rural_search_question_4_answer_1_1 -> binding.ruralSearchQuestion4Answer11.text.toString()
+                    R.id.rural_search_question_4_answer_1_2 -> binding.ruralSearchQuestion4Answer12.text.toString()
+                    R.id.rural_search_question_4_answer_1_3 -> binding.ruralSearchQuestion4Answer13.text.toString()
+                    else -> ""
+                }
+                viewModel.search4.postValue(viewModel.buildSearch(4, answer4))
+            }
+           /* binding.ruralSearchQuestion4Answer1.setOnCheckedChangeListener { _, checkedId ->
                 when (checkedId) {
                     R.id.rural_search_question_4_answer_1_1 -> {
                         binding.ruralSearchQuestion4Answer2.visibility = View.VISIBLE
@@ -99,19 +109,19 @@ class RuralFragment(private val viewModel: SearchViewModel) : Fragment() {
             binding.ruralSearchQuestion4Answer2.setOnCheckedChangeListener { _, checkedId ->
                 when (checkedId) {
                     R.id.rural_search_question_4_answer_2_1 -> {
-                        answer4="Residencial;" + binding.ruralSearchQuestion4Answer21.text.toString()
+                        answer4="Rural;" + binding.ruralSearchQuestion4Answer21.text.toString()
                     }
 
                     R.id.rural_search_question_4_answer_2_2 -> {
-                        answer4="Residencial;" + binding.ruralSearchQuestion4Answer22.text.toString()
+                        answer4="Rural;" + binding.ruralSearchQuestion4Answer22.text.toString()
                     }
                     R.id.rural_search_question_4_answer_2_3 -> {
-                        answer4="Residencial;" + binding.ruralSearchQuestion4Answer23.text.toString()
+                        answer4="Rural;" + binding.ruralSearchQuestion4Answer23.text.toString()
                     }
                 }
                 Log.i("test->", answer4)
                 viewModel.search4.postValue(viewModel.buildSearch(4, answer4))
-            }
+            }*/
 
             // 2. Geralmente, quais os períodos do dia o consumo é maior ?
             binding.ruralSearchQuestion5Answer11.setOnClickListener(View.OnClickListener {

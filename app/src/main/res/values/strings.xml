@@ -155,12 +155,9 @@
     <string name="industrial_commercial_search_answer_2_2">Não.</string>
     <string name="industrial_commercial_search_quest_3">Telefone do cliente para contato:</string>
     <string name="industrial_commercial_search_quest_4">1. O que caracteriza o consumo de energia do seu estabelecimento?</string>
-    <string name="industrial_commercial_search_answer_4_1">Só Residencial</string>
-    <string name="industrial_commercial_search_answer_4_1_1">Casa</string>
-    <string name="industrial_commercial_search_answer_4_1_2">Apartamento</string>
-    <string name="industrial_commercial_search_answer_4_1_3">Outro</string>
-    <string name="industrial_commercial_search_answer_4_2">Residencial e Comercial</string>
-    <string name="industrial_commercial_search_answer_4_3">Residencial e Industrial</string>
+    <string name="industrial_commercial_search_answer_4_1">Só Comercial</string>
+    <string name="industrial_commercial_search_answer_4_1_1">Residencial e comercial</string>
+    <string name="industrial_commercial_search_answer_4_1_2">Comercial e industrial</string>
     <string name="industrial_commercial_search_quest_5">2. Geralmente, quais os períodos do dia em que o consumo é maior (aparelhos ligados ou equipamentos, etc)?</string>
     <string name="industrial_commercial_search_answer_5_1">Manhã (06h às 12h)</string>
     <string name="industrial_commercial_search_answer_5_2">Tarde (12h às 18h)</string>

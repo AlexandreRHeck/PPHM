@@ -218,7 +218,7 @@
                             android:textSize="16sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/rural_search_question_4_answer_2"
+
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/rural_search_question_4_quest">
 
@@ -241,38 +241,7 @@
                                 android:text="@string/rural_search_answer_4_3" />
                         </RadioGroup>
 
-                        <RadioGroup
-                            android:id="@+id/rural_search_question_4_answer_2"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="8dp"
-                            android:visibility="gone"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/rural_search_question_4_answer_1"
-                            app:layout_constraintTop_toBottomOf="@+id/rural_search_question_4_quest">
 
-                            <RadioButton
-                                android:id="@+id/rural_search_question_4_answer_2_1"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/rural_search_answer_4_1_1" />
-
-                            <RadioButton
-                                android:id="@+id/rural_search_question_4_answer_2_2"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/rural_search_answer_4_1_2" />
-
-                            <RadioButton
-                                android:id="@+id/rural_search_question_4_answer_2_3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/rural_search_answer_4_1_3" />
-                        </RadioGroup>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>

@@ -62,6 +62,7 @@ class DialogCreateNewClient(context: Context, private val dismissListener: (Bool
             "Residencial" -> rbResidential.isChecked = true
         }
 
+
         setOnDismissListener { dismissListener(hasInsertion) }
 
         findViewById<Button>(R.id.dcnc_btn_save).setOnClickListener {
@@ -94,6 +95,8 @@ class DialogCreateNewClient(context: Context, private val dismissListener: (Bool
             }
         }
     }
+
+
 
     private fun validateEntries(): Boolean {
         return when {
